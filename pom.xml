@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://www.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
@@ -13,5 +13,98 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Importa a BOM (Bill Of Materials) do JUnit 5 para garantir a compatibilidade de todas as dependências do JUnit -->
+            <dependency>
+                <groupId>org.junit</groupId>
+                <artifactId>junit-bom</artifactId>
+                <version>5.11.1</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <!-- Dependência do Rest Assured para testes de API. Usada em automação de testes REST -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>5.5.0</version>
+        </dependency>
+
+        <!-- Validador de esquemas JSON para Rest Assured, útil para validar a estrutura de respostas JSON -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>5.5.0</version>
+        </dependency>
+
+        <!-- Integração do Allure com JUnit 5 para geração de relatórios de teste com anotações específicas como @Step e @Description -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-junit5</artifactId>
+            <version>2.29.0</version>
+        </dependency>
+
+        <!-- Plugin do Allure para integração com o Maven, usado para gerar e servir relatórios Allure a partir do Maven.
+             Também é necessário para que o Allure possa processar anotações específicas e gerar os resultados dos testes
+             convertidos em relatórios. -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-maven</artifactId>
+            <version>2.14.0</version>
+        </dependency>
+
+        <!-- Permite que o RestAssured e o Allure funcionem juntos -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-rest-assured</artifactId>
+            <version>2.29.0</version>
+        </dependency>
+
+        <!-- Dependência do JUnit 5 para executar os testes. JUnit Jupiter é a nova API de testes unitários do JUnit 5 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Plugin Maven Surefire para executar os testes -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M8</version>
+                <configuration>
+                    <systemPropertyVariables>
+                        <!-- Diretório onde os resultados dos testes serão armazenados -->
+                        <allure.results.directory>target/allure-results</allure.results.directory>
+                    </systemPropertyVariables>
+                </configuration>
+            </plugin>
+
+            <!-- Plugin Maven para gerar o relatório Allure -->
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.12.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <!-- Gera o relatório Allure -->
+                            <goal>report</goal>
+                            <!-- Serve o relatório Allure em uma página web local -->
+                            <goal>serve</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
