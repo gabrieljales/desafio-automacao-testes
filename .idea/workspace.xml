@@ -7,8 +7,6 @@
     <list default="true" id="e3fb72e4-f55e-4dba-ad89-f9cc068b03d7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/jsonplaceholder/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/jsonplaceholder/ApiTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/jsonplaceholder/BaseApiTestSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/jsonplaceholder/BaseApiTestSetup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
