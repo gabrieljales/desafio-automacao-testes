@@ -19,7 +19,7 @@ public class BaseApiTestSetup {
         List<?> currentFilters = RestAssured.filters();
         if (currentFilters.isEmpty()) {
             RestAssured.baseURI = "http://jsonplaceholder.typicode.com";
-            RestAssured.filters(new RequestLoggingFilter(), new ResponseLoggingFilter(), new AllureRestAssured());
+            RestAssured.filters(/*new RequestLoggingFilter(), new ResponseLoggingFilter(),*/ new AllureRestAssured()); // Comentada configs para não poluir o terminal
         }
     }
 }
