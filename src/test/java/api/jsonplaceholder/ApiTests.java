@@ -10,7 +10,7 @@ import static org.hamcrest.Matchers.equalTo;
 import static io.restassured.module.jsv.JsonSchemaValidator.*;
 import static org.hamcrest.Matchers.hasSize;
 
-public class ApiTest extends BaseApiTestSetup {
+public class ApiTests extends BaseApiTestSetup {
     @Test
     @Description("Valida o código de status e o corpo da resposta do endpoint /posts")
     public void testGetPosts() {
