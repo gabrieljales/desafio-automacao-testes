@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3fb72e4-f55e-4dba-ad89-f9cc068b03d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/jsonplaceholder/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/jsonplaceholder/ApiTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/jsonplaceholder/BaseApiTestSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/jsonplaceholder/BaseApiTestSetup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,81 +50,82 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.ApiTest">
-    <configuration name="ApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserTests.testLoginAndManageCart">
+    <configuration name="BaseSeleniumWebTestSetup.testUsingSelenium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="desafio-automacao-testes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="api.jsonplaceholder.*" />
+          <option name="PATTERN" value="web.saucedemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="api.jsonplaceholder" />
-      <option name="MAIN_CLASS_NAME" value="api.jsonplaceholder.ApiTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiTest.testCreatePost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="desafio-automacao-testes" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api.jsonplaceholder.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api.jsonplaceholder" />
-      <option name="MAIN_CLASS_NAME" value="api.jsonplaceholder.ApiTest" />
-      <option name="METHOD_NAME" value="testCreatePost" />
+      <option name="PACKAGE_NAME" value="web.demoautomationtesting" />
+      <option name="MAIN_CLASS_NAME" value="web.saucedemo.BaseSeleniumWebTestSetup" />
+      <option name="METHOD_NAME" value="testUsingSelenium" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTest.testCreatePostWithoutTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTests.testLoginAndAddItemToCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="desafio-automacao-testes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="api.jsonplaceholder.*" />
+          <option name="PATTERN" value="web.saucedemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="api.jsonplaceholder" />
-      <option name="MAIN_CLASS_NAME" value="api.jsonplaceholder.ApiTest" />
-      <option name="METHOD_NAME" value="testCreatePostWithoutTitle" />
+      <option name="PACKAGE_NAME" value="web.saucedemo" />
+      <option name="MAIN_CLASS_NAME" value="web.saucedemo.UserTests" />
+      <option name="METHOD_NAME" value="testLoginAndAddItemToCart" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTest.testDeletePostById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTests.testLoginAndManageCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="desafio-automacao-testes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="api.jsonplaceholder.*" />
+          <option name="PATTERN" value="web.saucedemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="api.jsonplaceholder" />
-      <option name="MAIN_CLASS_NAME" value="api.jsonplaceholder.ApiTest" />
-      <option name="METHOD_NAME" value="testDeletePostById" />
+      <option name="PACKAGE_NAME" value="web.saucedemo" />
+      <option name="MAIN_CLASS_NAME" value="web.saucedemo.UserTests" />
+      <option name="METHOD_NAME" value="testLoginAndManageCart" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTest.testNotFoundPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTests.testLoginAndRegister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="desafio-automacao-testes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="api.jsonplaceholder.*" />
+          <option name="PATTERN" value="web.saucedemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="api.jsonplaceholder" />
-      <option name="MAIN_CLASS_NAME" value="api.jsonplaceholder.ApiTest" />
-      <option name="METHOD_NAME" value="testNotFoundPost" />
+      <option name="PACKAGE_NAME" value="web.saucedemo" />
+      <option name="MAIN_CLASS_NAME" value="web.saucedemo.UserTests" />
+      <option name="METHOD_NAME" value="testLoginAndRegister" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTests.testSignUpAndRegister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="desafio-automacao-testes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="web.saucedemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="web.demoautomationtesting" />
+      <option name="MAIN_CLASS_NAME" value="web.saucedemo.UserTests" />
+      <option name="METHOD_NAME" value="testSignUpAndRegister" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ApiTest" />
-        <item itemvalue="JUnit.ApiTest.testCreatePostWithoutTitle" />
-        <item itemvalue="JUnit.ApiTest.testCreatePost" />
-        <item itemvalue="JUnit.ApiTest.testDeletePostById" />
-        <item itemvalue="JUnit.ApiTest.testNotFoundPost" />
+        <item itemvalue="JUnit.UserTests.testLoginAndManageCart" />
+        <item itemvalue="JUnit.UserTests.testLoginAndAddItemToCart" />
+        <item itemvalue="JUnit.UserTests.testLoginAndRegister" />
+        <item itemvalue="JUnit.UserTests.testSignUpAndRegister" />
+        <item itemvalue="JUnit.BaseSeleniumWebTestSetup.testUsingSelenium" />
       </list>
     </recent_temporary>
   </component>
@@ -153,5 +151,16 @@
       <updated>1727917140599</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
